@@ -1,225 +1,191 @@
 <!DOCTYPE html>
- <html>
- <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        
+       {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
     
-     <title> Resume</title>
-     <style>
-       * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-       }
- 
-       body {
-         background-color:white;
-         font-family: ;
-         color: #8892b0;
-       }
-       html {
-         scroll-behavior: smooth;
-       }
- 
-       .nav-items {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         padding: 15px 30px;
-         background-color: dark navy blue;
-         box-shadow: 2px 2px 3px rgb(227, 224, 224);
-       }
- 
-       .name {
-         font-size: 30px;
-         font-weight: 700;
-		 color:lightblue;
-       }
- 
-       nav a {
-         text-decoration: none;
-         color: grey;
-         font-size: 18px;
-         font-weight: 600;
-         margin: 0 15px;
-       }
- 
-       nav a:hover {
-         color: rgba(100,255,218,0.1);
-       }
- 
-       section {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-around;
-         padding: 30px;
-       }
- 
-       .intro {
-         font-size: 20px;
-         color: rgb(151, 141, 141);
-         max-width: 600px;
-       }
- 
-       .image img {
-         border: 3px solid  rgb(255, 255, 255);;
-         border-radius: 50%;
-       }
-       .about,
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+    
+        html {
+            scroll-behavior: smooth;
+        }
+
+     
+        .nav-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #003366;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .name {
+            font-size: 30px;
+            font-weight: bold;
+            color: #00bfff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+      
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about,
         .skills,
         .qualification,
         .hobbies,
         .contact {
+            margin: 20px auto;
             padding: 20px;
-            margin: 20px;
-            background: lightblue;
+            max-width: 800px;
+            background-color: #e0f7fa;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-       h2 {
-         color:pink;
-       }
- 
-       h3 {
-         color:yellow;
-       }
-	    h4 {
-         color:pastel;
-       }
-       table {
-         width: 100%;
-         border-collapse: collapse;
-         margin-top: 7px;
-       }
- 
+
+        h2 {
+            font-size: 24px;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #007acc;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li,
+        p {
+            color: #333;
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+       
+        .image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid #00bfff;
+            margin-bottom: 15px;
+        }
+
       
-       th,td {
-         border: 1px solid #ddd;
-         padding: 10px;
-         text-align: left;
-       }
- 
-       th,td{
-         background-color: lightblue;
-         color: white;
-         text-align: center;
-       }
-	   
- 
-       ul li,
-       p {
-         color: yellow;
-         font-size: 18px;
-         padding: 4px;
-       }
- 
-       .contact a {
-         display: block;
-         color:white;
- 
-         text-decoration: none;
-         font-size: 18px;
-         padding: 5px 0;
-       }
- 
-       .contact a:hover {
-         color: lightpink;
-       }
- 
-       @media (max-width: 768px) {
-         .nav-items {
-		 flex-direction: column;
-           align-items: center;
-         }
-         nav {
-           display: flex;
-           flex-direction: column;
-           text-align: center;
-         }
-         nav a {
-           margin: 5px 0;
-         }
-         section {
-           flex-direction: column;
-           align-items: center;
-           text-align: center;
-         }
-         .image img {
-           width: 150px;
-           height: 150px;
-         }
-         .intro {
-           text-align: text;
-         }
-		 
+        .contact a {
+            text-decoration: none;
+            color: #003366;
+            font-size: 18px;
+            margin: 5px 0;
+            transition: color 0.3s ease;
+        }
 
-		 .center-text {
-    text-align: center;
-}
+        .contact a:hover {
+            color: #007acc;
+        }
 
-       }
-     </style>
-   </head>
-   <body>
-     <div class="nav-items">
-       <div class="name"> Roshni</div>
-       <nav>
-	   <a href="#Home">Home</a>
-         <a href="#About">About</a>
-         <a href="#skills">Skills</a>
-         <a href="#Qualification">Qualification</a>
-         <a href="#hobbies">Hobbies</a>
-         <a href="#contact">Contact</a>
-       </nav>
-     </div>
- 
-    <section>
-    <div class="Profile">
-        <img src="Roshni.jpg" alt="My picture" width="200px" height="200px" />
+     
+        @media (max-width: 768px) {
+            .nav-items {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .image img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-items">
+        <div class="name">Roshni</div>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Qualification">Qualification</a>
+            <a href="#Hobbies">Hobbies</a>
+            <a href="#Contact">Contact</a>
+        </nav>
     </div>
-</section>
 
-<<div class="intro">
-    <h4>Hey! This is Roshni, an engineering student, AIML enthusiast, and a learner</h4>
-</div>
+    <section id="Home">
+        <div class="image">
+            <img src="Roshni.jpg" alt="Picture of Roshni"width="250px" height="250px">
+        </div>
+        <div class="intro">
+            <h3>Hello! I'm Roshni - an engineering student, AIML enthusiast, and a learner.</h3>
+        </div>
+    </section>
 
+    
+    <section class="about" id="About">
+        <h2>About</h2>
+        <p>I am currently pursuing my B.Tech in CSE (IoT) at Government Engineering College Vaishali. As an engineering student, I aim to develop problem-solving skills, creativity, and technical expertise across various disciplines.</p>
+    </section>
 
-<br><br>
-
-
-	 
-     <section>
-       <br><br>
-	   
-	   
-       <div class="image">
-         <img src= "Roshni.jpg" alt="Picture of Roshni "width="250px" height="250px">
-           
-       </div>
-	   <br><br>
-	   
-	   <div class="My Introduction">
-	   <div class="About" id="About">
-      <center><h2>About</h2></center>
-	  <br>
-        <center><h4>
-           I am currently pursuing my B.Tech in CSE(IoT) at Government Engineering College Vaishali,As an engineering student, i want to develop problem-solving skills, creativity, and technical expertise in various discipline.
-         </h4></center>
-       </div>
-     </section>
-	 <br><br><br>
-	 
-	 <div class="skills" id="skills">
-      <center><h2>Skills</h2></center>
-	  <center><h3>Always ready to learn new things!!👍</h3></center>
-
-       <ul>
-         <li>Programming: C, C++,Python</li>
-        
-         <li>Language: Hindi,English</li>
-       </ul>
-     </div>
-	 <br><br>
  
-      <section class="qualification" id="qualification">
+    <section class="skills" id="Skills">
+        <h2>Skills</h2>
+        <h3>Always eager to learn new things!</h3>
+        <ul>
+            <li>Programming: C, C++, Python</li>
+            <li>Languages: Hindi, English</li>
+        </ul>
+    </section>
+
+    <section class="qualification" id="Qualification">
         <h2>Qualification</h2>
         <ul>
             <li>B.Tech CSE (IoT) - Government Engineering College, Vaishali (2023 - 2027)</li>
@@ -227,7 +193,7 @@
             <li>Matriculation - Christ Church Diocesan School, Patna (2021)</li>
         </ul>
     </section>
- 
+
     <section class="hobbies" id="Hobbies">
         <h2>Hobbies</h2>
         <ul>
@@ -236,19 +202,18 @@
         </ul>
     </section>
 
+  
+    <section class="contact" id="Contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><a href="mailto:roshniso1203@gmail.com">📧 roshniso1203@gmail.com</a></li>
+            <li><a href="https://github.com/Roshni31-s" target="_blank">GitHub Profile</a></li>
+        </ul>
+    </section>
 
-	 <br><br>
- 
-     <div class="contact" id="contact">
-      <center><h2>Contact</h2></center>
-       <a href="roshniso1203@gamil.com"
-         >📧 roshniso1203@gamil.com</a>
-       
-     </div>
-	 <br><br>
-	 
-	 
-	 <center><h6> Thank you!</h6></center>
-	 <br><br>
-	 </body>
- </html>
+   
+    <footer>
+        <h6 style="text-align:center; padding:20px;">Thank you!</h6>
+    </footer>
+</body>
+</html>
